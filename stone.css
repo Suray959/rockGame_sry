@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(214, 228, 205);
+    width: 1300px;
+    height:40px;
+   
+}
+h1{
+    color: rgb(225, 113, 8);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    
+}
+.game{
+    display: none;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    margin: 150px;
+    background-color: rgb(197, 244, 168);
+}
+.home h1{
+    text-align: center;
+    color: brown;
+   
+  
+}
+.start{
+    background-color: rgb(188, 222, 143);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 200px;
+    border: 0px solid;
+    margin-left: 420px;
+    width: 150px;
+    height: 90px;
+
+}
+.screen{
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+    width: 1250px;
+    margin: 50px;
+    
+}
+.operator{
+    display: flex;
+    justify-content:center;
+    margin: 200px;
+    margin-left: 350px;
+  
+}
+.operator button{
+   background-color: rgb(168, 220, 206);
+    text-align: center;
+    border-radius: 50px;
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+}
+p{
+    border: 1px solid rgb(224, 210, 210);
+    border-radius: 3px;
+    font-size:larger;
+    background-color: rgb(205, 233, 125);
+    text-align: right;
+    margin: 10px;
+    padding: 20px;
+    width: 50px;
+    height: 10px;
+}
+.you{
+    background-color: rgb(99, 231, 154);
+    width: 300px;
+    height: 150px;
+}
+
+.computer{
+    background-color: rgb(99, 231, 154);
+    width: 300px;
+    height: 150px;
+}
+.netice{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(229, 214, 226);
+    text-align: center;
+    border-radius: 0px;
+    width: 340px;
+    height: 100px;
+    margin-left: 580px;
+    
+}
+.netice p{
+    text-align: left;
+    width:400px;
+    font-size: medium;
+}
+
+
+@keyframes winnerAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.winner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: green;
+    animation: winnerAnimation 1s ease forwards;
+}
+
+.winner.show {
+    display: block;
+}

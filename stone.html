@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stone.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="home">
+    <h1>LET'S GET STARTED</h1>
+    <button onclick="playGame()" class="start">PLAY</button>
+
+</section>
+
+<section class="game">
+
+<div class="screen">
+        
+      <div class="you">
+            <h1>Computer</h1>
+            <p class="userscore" > </p>
+
+        </div>
+
+      <div class="computer">
+            
+             <h1>User</h1>
+             <p class="computerscore" onclick="compResult()"></p>
+     </div>
+
+    </div>
+   
+    <div class="netice">
+            <p>COMPUTER: <span id="win" onclick="result(user, computer)" >0</span></p>
+            <p>YOU: <span id="lose" onclick="result(user, computer)">0</span></p>
+            <div class="winner"></div> 
+    </div>
+
+    <div class="operator">
+         <button onclick="checkGame('rock')"> ROCK</button>
+         <button onclick="checkGame('paper')"> PAPER</button>
+         <button onclick="checkGame('scissor')"> SCISSOR</button>
+
+    </div>
+
+   
+
+</section>
+    
+    <script src="./stone.js"></script>
+    
+</body>
+</html>
